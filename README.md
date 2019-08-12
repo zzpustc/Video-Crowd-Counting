@@ -17,7 +17,7 @@ Current crowd counting methods mainly focus on applying in single image. This re
 > pip install -r requirements.txt
 > ```
 ### Data preparing
-Since current datasets are basic based on single image, there are only Mall, UCSD, FDST are video based, so we train/test our method on Mall and FDST. You can download Mall[[link](http://personal.ie.cuhk.edu.hk/~ccloy/downloads_mall_dataset.html)] and FDST[[LINK](https://pan.baidu.com/share/init?surl=NNaJ1vtsxCPJUjDNhZ1sHA)(pwd:**sgt1**)]. We have offer code to process these two datasets. You can find in datasets/Mall/PrepareMall.m and /datasets/FDST/PrepareFDST.m. I suggest you to moditify the code to fit your environment, but the architecture of precessed data should be like below:
+Since current datasets are basic based on single image, there are only Mall, UCSD, FDST are video based, so we train/test our method on Mall and FDST. You can download Mall[[link](http://personal.ie.cuhk.edu.hk/~ccloy/downloads_mall_dataset.html)] and FDST[[link](https://pan.baidu.com/share/init?surl=NNaJ1vtsxCPJUjDNhZ1sHA)(pwd:**sgt1**)]. We have offer code to process these two datasets. You can find in datasets/Mall/PrepareMall.m and /datasets/FDST/PrepareFDST.m. I suggest you to moditify the code to fit your environment, but the architecture of precessed data should be like below:
 - Folder Tree
 
     ```
@@ -30,10 +30,9 @@ Since current datasets are basic based on single image, there are only Mall, UCS
     |       +--den
     ```
 
-Meanwhile, we offer processed data[[link]].
 
 ## Train
-In config.py you can change any parameter if you want. One important paramter is __C.STN. Change __C.STN to True so that the framework would adopt STN to process multiple frame dense maps.
+In config.py you can change any parameter if you want. One important paramter is __C.STN. Change __C.STN to True so that the framework would adopt STN to process multiple frame dense maps. Create a folder named best_model, and put the single image trained model[[link](https://pan.baidu.com/s/1ld5s36CUFjcNDQMM2jlStw)](pwd: mupw) in it.
 ### Train
 > ```shell
 > python train.py
@@ -57,5 +56,5 @@ Quantitative results(MAE/MSE):
 | Double Transformed CascadeCNN   |1.7123/2.2000 | TBD |
 
 ## Pretrained Model
-We would upload  pretrained model to help you verify our method. You can find models of DTC[[link]()] trained on Mall.
+We would upload  pretrained model to help you verify our method. You can find models of DTC[[link](https://pan.baidu.com/s/1B3LUv5Qh_3IAZE5OGFEqLA)](pwd: svek) trained on Mall.
 
