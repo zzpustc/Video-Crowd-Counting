@@ -41,19 +41,29 @@ In config.py you can change any parameter if you want. One important paramter is
 ## Performance
 Quantitative results(MAE/MSE):
 
-|          Method                 | Mall         |FDST|
-|---------------------------------|--------------|----|
-| Kernel Ridge Regression         |3.51/18.10    | TBD |
-| Ridge Regression                |3.59/19.00    | TBD |
-| Gaussian Process Regression     |3.72/20.10    | TBD |
-| Cumulative Attribute Regression |3.43/17.70    | TBD |
-| COUNT Forest                    |2.50/10.00    | TBD |
-| ConvLSTM                        |2.24/8.50     | TBD |
-| Bidirectional ConvLSTM          |2.10/7.60     | TBD |
-| LSTN                            |2.00/2.50     | TBD |
-| DT-LCNN                         |2.03/2.60     | TBD |
-| Single Transformed CascadeCNN   |1.7261/2.2233 | TBD |
-| Double Transformed CascadeCNN   |1.7123/2.2000 | TBD |
+|          Method                 | Mall         |
+|---------------------------------|--------------|
+| Kernel Ridge Regression         |3.51/18.10    |
+| Ridge Regression                |3.59/19.00    |
+| Gaussian Process Regression     |3.72/20.10    |
+| Cumulative Attribute Regression |3.43/17.70    |
+| COUNT Forest                    |2.50/10.00    |
+| ConvLSTM                        |2.24/8.50     |
+| Bidirectional ConvLSTM          |2.10/7.60     |
+| LSTN                            |2.00/2.50     |
+| DT-LCNN                         |2.03/2.60     |
+| Single Transformed CascadeCNN   |1.7261/2.2233 |
+| Double Transformed CascadeCNN   |1.7123/2.2000 |
+
+
+|          Method                 | FDST         |
+|---------------------------------|--------------|
+| MCNN                            |3.77/4.88     |
+| ConvLSTM                        |4.48/5.82     |
+| LSTN                            |3.35/4.45     |
+| Single Transformed CascadeCNN   |TBD           |
+| Double Transformed CascadeCNN   |2.2550/2.8121 |
+
 
 ## Pretrained Model
 We would upload  pretrained model to help you verify our method. You can find models of DTC[[link](https://pan.baidu.com/s/1B3LUv5Qh_3IAZE5OGFEqLA)](pwd: svek) trained on Mall.
