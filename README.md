@@ -4,9 +4,6 @@
 ## Purpose
 This repository mainly created for counting human(without duplication) in video. 
 
-## Acknowledge
-This code is modified from the original opensource crowd counting framework code https://github.com/gjy3035/C-3-Framework
-
 ## Method
 Current crowd counting methods mainly focus on applying in single image. This repository proposed a CascadeCNN network, which utilizes multiple frames to refine the current frame dense map. Our Method can be divided into two kinds: Single Transformed CascadeCNN and Double transformed CascadeCNN.
 
@@ -17,7 +14,7 @@ Current crowd counting methods mainly focus on applying in single image. This re
 > pip install -r requirements.txt
 > ```
 ### Data preparing
-Since current datasets are basic based on single image, there are only Mall, UCSD, FDST are video based, so we train/test our method on Mall and FDST. You can download Mall[[link](http://personal.ie.cuhk.edu.hk/~ccloy/downloads_mall_dataset.html)] and FDST[[link](https://pan.baidu.com/share/init?surl=NNaJ1vtsxCPJUjDNhZ1sHA)(pwd:**sgt1**)]. We have offer code to process these two datasets. You can find in datasets/Mall/PrepareMall.m and /datasets/FDST/PrepareFDST.m. I suggest you to moditify the code to fit your environment, but the architecture of precessed data should be like below:
+Since current datasets are basic based on single image, there are only Mall, UCSD, FDST are video based, so we train/test our method on Mall and FDST. You can download Mall[[link](http://personal.ie.cuhk.edu.hk/~ccloy/downloads_mall_dataset.html)] and FDST[[link](https://pan.baidu.com/share/init?surl=NNaJ1vtsxCPJUjDNhZ1sHA)(pwd:**sgt1**)]. We have offer code to process these two datasets. You can find in datasets/Mall/PrepareMall.m and /datasets/FDST/PrepareFDST.m. I suggest you to moditify the code to fit your environment, but the architecture of processed data should be like below:
 - Folder Tree
 
     ```
