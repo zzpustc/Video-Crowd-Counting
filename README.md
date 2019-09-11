@@ -58,7 +58,7 @@ Quantitative results(MAE/MSE):
 | MCNN                            |3.77/4.88     |
 | ConvLSTM                        |4.48/5.82     |
 | LSTN                            |3.35/4.45     |
-| Single Transformed CascadeCNN   |TBD           |
+| Single Transformed CascadeCNN   |2.0902/2.7530 |
 | Double Transformed CascadeCNN   |2.2550/2.8121 |
 
 
