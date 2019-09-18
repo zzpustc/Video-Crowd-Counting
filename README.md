@@ -2,7 +2,7 @@
 ---
 
 ## Purpose
-This repository mainly created for counting human(without duplication) in video. 
+This repository mainly created for counting human benefit from video. 
 
 ## Method
 Current crowd counting methods mainly focus on applying in single image. This repository proposed a CascadeCNN network, which utilizes multiple frames to refine the current frame dense map. Our Method can be divided into two kinds: Single Transformed CascadeCNN and Double transformed CascadeCNN.
